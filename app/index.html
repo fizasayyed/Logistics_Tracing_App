@@ -86,10 +86,9 @@
     })
 
     async function doInitMetamask() {
-      SellerContractAddress = "0x8e71128742295BF8b6Aa95d678688419967759b0";
-      SellerContractABI =
-      [
-    {
+      SellerContractAddress = "0x706E9168A886b72A39666FE8F8C0744137ec36F6";
+      SellerContractABI = [
+      {
       "inputs": [
         {
           "internalType": "address",
@@ -152,8 +151,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -202,8 +200,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -252,8 +249,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -320,8 +316,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -350,8 +345,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -395,8 +389,7 @@
         }
       ],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -430,8 +423,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -507,11 +499,12 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
-  ]
-      // provider = new ethers.providers.Web3Provider(web3.currentProvider);
+      ]
+    // deprecated  
+    // provider = new ethers.providers.Web3Provider(web3.currentProvider);
+    //new =>
       provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 
       try {
@@ -525,20 +518,15 @@
 
       signer = await provider.getSigner(accounts[0]);
       console.log(signer);
-
-
-      console.log(SellerContractAddress);
-      console.log(SellerContractABI);
+ 
+      console.log("Seller address:",SellerContractAddress);
+      console.log("Seller Contract ABI:",SellerContractABI);
 
       Seller = new ethers.Contract(SellerContractAddress, SellerContractABI, signer);
     }
     doInitMetamask();
-
-
   </script>
 </head>
-
-
 <body>
   <div class="topnav">
     <a class="active" href="#home">Home</a>
@@ -594,5 +582,4 @@
 
           </div>
 </body>
-
 </html>

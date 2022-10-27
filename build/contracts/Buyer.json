@@ -59,8 +59,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -89,8 +88,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -118,8 +116,7 @@
       "name": "Buy",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -132,8 +129,7 @@
       "name": "BookFreighter",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -177,8 +173,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_seller\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_freight\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"OID\",\"type\":\"uint256\"}],\"name\":\"BookFreighter\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"pid\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"addss\",\"type\":\"string\"},{\"internalType\":\"uint40\",\"name\":\"ph\",\"type\":\"uint40\"}],\"name\":\"Buy\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"oid\",\"type\":\"uint256\"}],\"name\":\"getInvoice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"number\",\"type\":\"uint256\"}],\"name\":\"queryOrder\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"pp\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ProductID\",\"type\":\"uint256\"}],\"name\":\"requestQuote\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Buyer.sol\":\"Buyer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Buyer.sol\":{\"keccak256\":\"0xab46f6696017862537d690d82a32424252bea2d3e79d53a05fc9e5e158c0f126\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://80d04e4e74a0e1e3b4dbc1a43336f2b5ecff7fa84ba35c17ac5d09875a2cdd7b\",\"dweb:/ipfs/QmaDLn7pkygokNreGK8ykCz2dAMNv4xWiHnrKC3aoium12\"]},\"project:/contracts/Freight.sol\":{\"keccak256\":\"0xf332e40f4b8a235876e76ebf427ebcdf5397cfbecb7ea4189583bd6941de9c27\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3a4b1032498db231ea201cf368afe95c9799aee5e18ff6cf60f3fa1ab63c8b32\",\"dweb:/ipfs/QmXeKnNVBUxJ5o5Fdwnb2CVj75dtTrFKA7GRcR7Uhb7yr9\"]},\"project:/contracts/Seller.sol\":{\"keccak256\":\"0x5ed0c127660d72a7a62d9b95cdbace1f56448adc55f711fd26adeb6df7182c49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b8ec0f0de03504cd08591c9fa501a53af35a8f1c6e2d8cd03db3a7e20bf2dfb1\",\"dweb:/ipfs/QmYu85dFZo3es11zKXGEZPoVhzFydYBCAuUq1LL9xBJSLs\"]}},\"version\":1}",
@@ -13633,13 +13628,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xdC17B1858f7fEb99a6308885B7D6A05802D3C291",
-      "transactionHash": "0x559eeb103443acfb7eccdf738ae498fdbfbba9d143d2c2197439cfee30acc98e"
+      "address": "0x343168eA8062804757Dc0c67eeC45a73F64e76e8",
+      "transactionHash": "0x6157f97c3c3258ca19ddce21b3e78f69c1c278c09ec5a56583d292da07913dda"
     }
   },
   "schemaVersion": "3.4.9",
-  "updatedAt": "2022-10-22T09:07:59.441Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-10-27T08:47:57.624Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -19,7 +19,7 @@ module.exports = {
     }
   },
   db: {
-    enabled: false,
+    enabled: true,
     host: "127.0.0.1",
     adapter: {
       name: "sqlite",

@@ -57,9 +57,9 @@
     }
 
     async function doInitMetamask() {
-        BuyerContractAddress = "0xdC17B1858f7fEb99a6308885B7D6A05802D3C291";
-        SellerContractAddress = "0x8e71128742295BF8b6Aa95d678688419967759b0";
-        FreightContractAddress = "0xFDbC57AB8E4Cc8aCFd8B8EF9374Eed9c89a1a35f";
+        BuyerContractAddress = "0x343168eA8062804757Dc0c67eeC45a73F64e76e8";
+        SellerContractAddress = "0x706E9168A886b72A39666FE8F8C0744137ec36F6";
+        FreightContractAddress = "0xB2AbAc7fF8521CAD8549C4e73Aa84d7101B2d7D5";
         FreightContractABI =
         [
     {
@@ -125,8 +125,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -275,8 +274,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -305,8 +303,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -334,8 +331,7 @@
       "name": "Buy",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -348,8 +344,7 @@
       "name": "BookFreighter",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -393,13 +388,11 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
-        SellerContractABI =
-      [
-    {
+        SellerContractABI = [
+        {
       "inputs": [
         {
           "internalType": "address",
@@ -462,8 +455,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -512,8 +504,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -562,8 +553,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -630,8 +620,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -660,8 +649,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -705,8 +693,7 @@
         }
       ],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -740,8 +727,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -817,12 +803,12 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ]
-
+      //deprecated
       // provider = new ethers.providers.Web3Provider(web3.currentProvider);
+      //new =>
       provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 
       try {
@@ -837,13 +823,12 @@
       signer = await provider.getSigner(accounts[0]);
       console.log(signer);
 
-
-      console.log(BuyerContractAddress);
-      console.log(BuyerContractABI);
-      console.log(SellerContractAddress);
-      console.log(SellerContractABI);
-      console.log(FreightContractAddress);
-      console.log(FreightContractABI);
+      console.log("Buyer address:",BuyerContractAddress);
+      console.log("Buyer Contract ABI:",BuyerContractABI);
+      console.log("Seller address:",SellerContractAddress);
+      console.log("Seller Contract ABI:",SellerContractABI);
+      console.log("Freight address:",FreightContractAddress);
+      console.log("Freight Contract ABI:",FreightContractABI);
 
       Seller = new ethers.Contract(SellerContractAddress, SellerContractABI, signer);
 
