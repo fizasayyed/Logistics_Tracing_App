@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Cache-control" content="public">
   <title>Logistics Application</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.1/ethers.umd.js"
-    type="application/javascript"></script>
+  type="application/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script>
     let Seller;
     let SellerContractAddress;
@@ -77,8 +80,13 @@
       event.preventDefault();
     }
 
+    
+    $('.s-inte').click(function(e){
+    e.preventDefault()
+    })
+
     async function doInitMetamask() {
-      SellerContractAddress = "0x2aA65F44EE1ed06c075fD80C0fF4a93518f9c1a5";
+      SellerContractAddress = "0x8e71128742295BF8b6Aa95d678688419967759b0";
       SellerContractABI =
       [
     {
@@ -529,12 +537,12 @@
 
   </script>
 </head>
-<link rel="stylesheet" href="style.css">
+
 
 <body>
   <div class="topnav">
     <a class="active" href="#home">Home</a>
-    <a href="buyer.html">Buyer</a>
+    <a href ="buyer.html" class="s-inte">Buyer</a>
     <a href="freight.html">Freight</a>
   </div>
   <div class="container">
